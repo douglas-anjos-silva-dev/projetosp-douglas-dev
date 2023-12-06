@@ -1,0 +1,31 @@
+<?php
+//PHP = Personal Home Page
+
+//Variáveis
+$nome = 'Douglas';
+$idade = '26';
+
+if($nome == 'Douglas'){
+    echo'Verdadeiro';
+}else{
+    echo 'Falso';
+}
+if($idade == '26'){
+    echo 'Verdeiro';
+}else{
+    echo 'Falso';
+}
+
+//Variável de variável
+
+//Concatenar
+//Comparar valores
+
+//>= <= == !=
+// ==== !==
+
+//Looping
+//Funções
+//Classes
+
+?>

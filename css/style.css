@@ -1,0 +1,667 @@
+/* GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/*Tags Gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a img{
+    border: 0;
+}
+
+ul{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+
+h2{
+    font-size: 2.5em;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 20px 10px 20px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-size: 1.5em;
+    font-weight: 100;
+    text-align: center;
+    padding: 10px 20px 50px 20px;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* PADRÕES DE CORES */
+:root{
+    --color-red: #de0c11;
+    --color-red-dark: #f70e13;
+
+    --color-blue: #235580;
+    --color-blue-dark: #0c0469;
+    --color-blue-marine: #4143e5;
+
+    --color-green: #2e9b50;
+    --color-green-dark: #247c40;
+
+    --color-white: #ffffff;
+    --color-white-dark: #eeeeee;
+
+    --color-yellow: #fafa61;
+    --color-dark: #555555;
+
+    --color-orange: #ff5e10;
+    --color-orange-dark: #cc4b0c;
+
+    --color-gray: #b0acac;
+    --color-gray-dark: #8c8989;
+}
+
+/*CLASSES GERAIS*/
+.clear{
+    clear: both;
+}
+.text-margin{
+    margin: 0 30px;
+}
+.radius{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+}
+
+.container_color{
+    color: var(--color-white);
+}
+.bars{
+    display: none;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+/*HEADER*/
+
+header{
+    width: 100%;
+    height: 720px;
+    margin: 0;
+    color: var(--color-white);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../imagens/background.jpg');
+}
+
+header .header_top{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 20px;
+    position: fixed;
+    z-index: 920;
+    background-color: var(--color-blue-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header_top .header_left{
+    width: 30%;
+    height: auto;
+    margin: 0;
+    padding: 0 20px;
+    float: left;
+}
+
+header .header_top .header_left h1{
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+header .header_top .header_right{
+    width: 65%;
+    height: auto;
+    margin: 0;
+    padding: 0 20px;
+    float: right;
+}
+header .header_top .header_right ul{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: right;
+}
+header .header_top .header_right li{
+    padding: 10px 10px;
+    display: inline-block;
+}
+header .header_top .header_right li a{
+    color: var(--color-white);
+    padding: 2px 5px;
+}
+
+header .header_legend{
+    width: 640px;
+    height: auto;
+    margin: 20% 5%;
+    position: absolute;
+    z-index: 901;
+}
+
+header .header_legend h1{
+    font-size: 4em;
+    text-transform: uppercase;
+
+}
+
+header .header_legend p{
+    font-size: 1em;
+    text-transform: uppercase;
+    color:  2px solid #d3d3d330;
+ 
+}
+
+header .header_legend .header_div{
+    margin-top: 50px;
+
+}
+
+header .header_legend .header_div a{
+    font-size: 1.4em;
+    color: var(--color-white);
+    background-color: var(--color-blue-dark);
+    padding: 10px 20px;
+    
+}
+
+/*MAIN*/
+main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    position: relative;
+
+}
+
+main .container{
+    width: 100%;
+    height: auto;
+    margin: 0;
+
+}
+/*CONFIG: Conteúdo Padrão[Botão]*/
+main .container .container_div{
+    margin-top: 50px;
+}
+main .container .container_div a{
+    font-size: 1.4em;
+    color: var(--color-white);
+    background-color: var(--color-blue-dark);
+    padding: 10px 20px;
+}
+/*CONFIG: Conteúdo Padrão [Colunas]*/
+main .container_collumns .collumns{
+    width: 35%;
+    height: auto;
+    min-height: 550px;
+    margin: 0px 1% 100px 1%;
+    float: left;
+    background: var(--color-white);
+    border: 2px solid #ffffff30;
+    border-radius: 5%;
+   
+    
+    /* background: #ffffff80;
+    border: 2px solid #ffffff30;
+    border-radius: 5%;
+    backdrop-filter: blur(10px);    
+     */
+}
+main .container_collumns .collumns img{
+    width: 95%;
+    height: 260px;
+    margin: 2%;
+    border-radius: 5%;
+}
+main .container_collumns .collumns .icon{
+    text-align: center;
+}
+main .container_collumns .collumns .icon i{
+    padding: 50px 0 0 0;
+    font-size: 4em;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+main .container_collumns .collumns h4{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--color-dark);
+    text-transform: uppercase;
+}
+main .container_collumns .collumns p{
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    color: var(--color-dark);
+    margin-bottom: 50px;
+}
+main .container .container_section{
+    padding-left: 0 !important;
+}
+/*NAVIGATOR: SOCIAL MIDIAS*/
+main .container_navigator{
+    position: fixed;
+    z-index: 900;
+    bottom: -2px;
+    right: -4px;
+    padding: 20px 10px;
+    background-color: var(--color-white-dark);
+}
+main .container_navigator .open_navigator{
+    display: none;
+}
+main .container_navigator li{
+    font-size: 1.2em;
+    padding: 20px 10px;
+}
+main .container_navigator li:hover{
+    background-color: var(--color-white);
+}
+main .container_navigator a{
+    color: var(--color-dark);
+}
+/*ABOUT US*/
+main .container_aboutus{
+    width: 90%;
+    height: auto;
+    margin: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .container_aboutus .aboutus_left{
+    width: 100%;
+    height: auto;
+    margin: 0 2% 0 0;
+    float: left;
+}
+main .container_aboutus .aboutus_left img{
+    width: 400px;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+}
+main .container_aboutus .aboutus_right{
+    width: 60%;
+    height: auto;
+    margin: 0;
+    padding: 0 20px;
+    float: right;
+
+}
+main .container_aboutus .aboutus_right p{
+    margin: 10px 20px;
+    font-weight: 100;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*WOKS*/
+
+main .container_works{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    background-color: var(--color-blue-marine);
+
+}
+main .container_works .container_collumns{
+    width: 87%;
+    height: auto;
+    margin: 50px 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CLIENTS*/
+
+main .container_clients{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    background-color: var(--color-white);
+
+}
+main .container_clients .container_collumns{
+    width: 87%;
+    height: auto;
+    margin: 50px 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*TESTIMONTES*/
+
+main .container_testimontes{
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    background-color: var(--color-blue-marine);
+    
+
+}
+main .container_testimontes .container_collumns{
+    width: 87%;
+    height: auto;
+    margin: 50px 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+main .container_testimontes .container_collumns .testimony_img{
+    width: 35%;
+    height: 30%;
+    border-radius: 50%;
+    margin: 50px 32.5% 10px 32.5%;
+}
+/*(CONTACTUS US)*/
+
+main .container_contactus{
+    width: 90%;
+    height: auto;
+    margin: 50px 5%;
+    background-color: var(--color-white);
+}
+
+main .container_contactus .contactus_left{
+    width: 30%;
+    height: auto;
+    margin: 0 2% 0 0;
+    float: left;
+}
+main .container_contactus .contactus_left h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    padding: 5px 5px !important;
+}
+main .container_contactus .contactus_left h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 5px 0 5px;
+}
+main .container_contactus .contactus_left p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-align: left;
+    padding: 0 5px;
+    font-size: 0.9em;
+}
+main .container_contactus .contactus_right{
+    width: 66%;
+    height: auto;
+    margin: 0 2% 0 0;
+    float: right;
+}
+main .container_contactus .contactus_right h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    }
+main .container_contactus .contactus_right input[type=text],
+main .container_contactus .contactus_right input[type=email]{
+    font-weight: 300;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:  10px 20px;
+    background-color: var(--color-white-dark);
+    display: block;
+    margin: 10px 0;
+    width: 90%;
+}
+main .container_contactus .contactus_right textarea{
+    font-weight: 300;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:  10px 20px;
+    background-color: var(--color-white-dark);
+    display: block;
+    margin: 10px 0;
+    width: 90%;
+}
+main .container_contactus .contactus_right button{
+    font-size: 1.4em;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-blue-marine);
+    
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: auto;
+    margin: 150px 0 0 0;
+    padding: 20px 20px;
+    background-color: var(--color-blue-dark);
+}
+footer h1{
+    text-align: center;
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 1.1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+footer p{
+    text-align: center;
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer a{
+    color: var(--color-white);
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--color-white-dark);
+}
+/*Responsivo [RESPONSIVE]*/
+@media(max-width:900px){
+    header .header_top .header_left{
+        width: 24%;
+        padding: 0 ;
+        
+    }
+    header .header_top .header_left h1{
+        font-size: 1.2em;
+    }
+    header .header_top .header_right{
+        width: 76%;
+    }
+    header .header_top .header_right ul{
+        font-size: 0.9em;
+        text-align: center;
+    }
+}
+@media(max-width: 850px){
+    header .header_top{
+        display: block;
+        clear: both;
+    }
+    header .header_top .header_left{
+        width: 90%;
+        margin: 0 5%;
+        display: block;
+        clear: both;
+        text-align: center;
+    }
+    header .header_top .header_right{
+        width: 90%;
+        margin: 0 5%;
+        display: block;
+        clear: both;
+        text-align: center;
+    }
+@media (max-width: 720px) {
+    .bars{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        z-index: 921;
+        top: 15px;
+        right: 10px;
+    }
+    .header .header .header_legend{
+        width: 90%;
+        margin: 35% 5%;
+    }
+    .header .header .header_legend h1{
+        font-size: 3em;
+        text-align: center;
+    }
+    
+    header .header_legend p{
+        font-size: 1.1em;
+        text-align: center;
+    }
+    
+    header .header_legend .header_div{
+        margin-top: 50px;
+        text-align: center;
+    
+    }
+    
+    header .header_legend .header_div a{
+        font-size: 1.2em;
+        
+    }
+    header .header_top .header_right ul{
+        display: none;
+        text-align: center;
+    }
+    header .header_top .header_right li{
+        padding: 10px 10px;
+        display: block;
+    }
+    main .container_aboutus {
+        display: block;
+    }
+    main .container_aboutus .aboutus_left,main .container_aboutus .aboutus_right{
+        width: 90%;
+        height: auto;
+        margin: 0 5%;
+        display: block;
+        clear: both;
+    }
+    main .container_aboutus .aboutus_left img{
+        width: 600px;
+        height: 400px;
+        margin: 0;
+    }
+    main .container .container_div{
+        text-align: center;
+    }
+    
+    main .container_works .container_collumns,
+    main .container_clients .container_collumns,
+    main .container_testimontes .container_collumns{
+        width: 90%;
+        height: auto;
+        margin: 0 5px;
+        display: block;
+        clear: both;
+    }
+    main .container_contactus form{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    main .container_contactus button{
+        width: 90%;
+        height: auto;
+        margin: 0;
+        display: block;
+        clear: both;
+    }
+    main .container_contactus .container_left,main .container_contactus .container_right{
+        width: 90%;
+        height: auto;
+        margin: 50px 5px;
+        display: block;
+        clear: both;
+    }
+    main .container_collumns .collumns{
+        width: 87%;
+        height: auto;
+        margin: 0 5% 50px 5%;
+        display: block;
+        clear: both;
+    }
+    main .container_collumns .collumns img{
+        width: 600px;
+        height: 400px;
+        margin: 0 auto;
+    }   
+    }
+    /* 620px*/
+    @media (max-width620px){
+        header{
+            height: 540px;
+        }
+        main .container_collumns .collumns img{
+            width: 600px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        main .container_navigator .disactive{
+            display: none;
+            text-align: center;
+            color: var(--color-dark);
+            padding: 0 5px;
+            font-size: 1.2em;
+        }
+        main .container_navigator .open_navigator{
+            color: var(--color-dark);
+        }
+        main .container_navigator .navigator{
+            display: none;
+
+        }
+        footer h1{
+            font-size: 0.9em;
+        }
+    }
+}
